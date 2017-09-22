@@ -1,7 +1,7 @@
 # WHAT IS THIS?
 A sample Rails application which is in one docker container and it connects to a postgres db which is in another container. 
 
-#Pre-requisites
+# Pre-requisites
 Install docker as well as docker-compose
 
 ## Steps
