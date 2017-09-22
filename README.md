@@ -11,6 +11,8 @@ To run this, clone this repo, Then execute the following steps from the applicat
         $ docker-compose build 
 
         $ docker-compose up
+
+From another terminal
         
         $ docker-compose run web rake db:create
         
