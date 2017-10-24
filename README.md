@@ -1,19 +1,15 @@
 # WHAT IS THIS?
-A sample Rails application which is in one docker container and it connects to a postgres db which is in another container. 
+A sample Rails CRUD application. 
 
 # Pre-requisites
-Install docker as well as docker-compose
+Install Ruby Version 2.4.1 and Postgresql
 
 ## Steps
-To run this, clone this repo, Then execute the following steps from the application root folder. Then open http://localhost:3000/fruits from browser.
+To run this, clone this repo. Modify the config/database.yml file. Then execute the following steps from the application root folder. Finally open http://localhost:3000/fruits from browser.
 
 
-        $ docker-compose build 
+        $ bundle exec rake db:create
 
-        $ docker-compose up
+        $ bundle exec rake db:migrate
 
-From another terminal
-        
-        $ docker-compose run web rake db:create
-        
-        $ docker-compose run web rake db:migrate
+        $ bundle exec rails s 
